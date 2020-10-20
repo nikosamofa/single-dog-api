@@ -1,5 +1,4 @@
 # Single-dog-api-app
-# dog-api-app
 ## My dog api app wireframe
 This is a sample wireframe for a dog app that displays a single random dog photos based on the selected breed. 
 - html 
