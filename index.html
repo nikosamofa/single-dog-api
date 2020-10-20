@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" type="text/stylesheet" href="dog.css">
+    <link rel="stylesheet" type="text/stylesheet" href="single-dog.css">
 </head>
 
 <body>
@@ -14,25 +14,23 @@
             <div class="item">
                 <form class="js-dog-form" role="searchForm">
                     <h1> Welcome to the Dog app!!</h1>
-                    <p>Enter a number between 3 and 50 to display 3-50 dog pictures.</p>
-                    <label for="number-of-dogs">Enter number of dogs to display</label>
-                    <input class="number-of-dogs" type="number" min="3" max="50">
+                    <p>Enter a breed to display a cute dog pictures.</p>
+                    <label for="breed-of-dogs">Enter dog breed here :</label>
+                    <input class="breed-of-dogs" type="text" value="Husky" required>
                     <button type="submit" class="submit" role="search">Show Me!</button>
                 </form>
             </div>
             <div class="container">
-            <div class="hidden-div" hidden>
-                <h2>Check out thesse cute pups</h2>
-                
-                <ul class="images">
-                    <li class="dog-images"></li>
-                </ul>                
+                <div class="hidden-div" hidden>
+                    <h2>Check out this cute pup!</h2>
+                    <input type="image" class="dog-images">                      
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.js" crossorigin="anonymous"></script>
-    <script src="dog.js"></script>
+    <script src="single-dog.js"></script>
 </body>
 
 </html>
