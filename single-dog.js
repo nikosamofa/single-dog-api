@@ -31,10 +31,14 @@ function getTheDog(submissions) {
 //This function displays the image to the DOM
 function displayResults(getDog) {
 
-    $('.dog-images').html(`<input type="image" src="${getDog.message}" alt="picutre of a Dog" class="dogimages">`);
+    $('.dog-images-results').html(`<img src="${getDog.message}" alt="picutre of a Dog" class="dogimages">`);
 
     $('.hidden-div').removeAttr('hidden')
 };
 
 
-$(watchForm);
+function all(){
+    $(watchForm);
+}
+
+$(all)
