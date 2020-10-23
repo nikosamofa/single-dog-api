@@ -19,7 +19,7 @@ function getTheDog(submissions) {
     fetch(`https://dog.ceo/api/breed/${submissions}/images/random`)
         .then(response => {
             if (response.ok) {
-                return response.json()
+                return response.json()                
             }
             throw new Error(response.statusText);
         })
@@ -30,10 +30,12 @@ function getTheDog(submissions) {
 
 //This function displays the image to the DOM
 function displayResults(getDog) {
-
+    
     $('.dog-images-results').html(`<img src="${getDog.message}" alt="picutre of a Dog" class="dogimages">`);
-
-    $('.hidden-div').removeAttr('hidden')
+    
+    $('.hidden-div').removeAttr('hidden');
+    
+    console.log(getDog)
 };
 
 
